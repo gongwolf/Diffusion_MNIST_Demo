@@ -1,0 +1,13 @@
+# Ignore the data folder (datasets, models, etc.)
+data/
+
+# Optional: Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Optional: Ignore environment files
+.env
+*.env
+diffusion-env/
