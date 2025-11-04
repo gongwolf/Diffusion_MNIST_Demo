@@ -53,7 +53,7 @@ It is based on the paper "Denoising Diffusion Probabilistic Models" by Ho et al.
     You can edit this file to train `SimpleModel` or `UNetModel` instead.
 
 4.  **Run Sampling (Inference):**
-    *(Note: A dedicated `5_sample.py` script is not yet built, but the logic is implemented.)*
+    *You can check the implementation in the 4_sampling_process.ipynb*
 
     To generate new images, you would:
 
@@ -61,13 +61,7 @@ It is based on the paper "Denoising Diffusion Probabilistic Models" by Ho et al.
       * Start with pure Gaussian noise: `x_T = torch.randn(...)`.
       * Iteratively denoise the image from `t = T-1` down to `0` using the `Alpha_NoiseScheduler.sample_prev_step()` method.
 
-You're right, that section is very heavy on the math and can be tough to read in a `README`. It's better to lead with the *intuition* first and then connect it to the code.
-
-Here's a refined version of that section, focusing on clarity and a more intuitive flow.
-
----
-... (previous sections) ...
-
+-----
 ## 🧠 How It Works (The Theory)
 
 ### 1. The Forward Process (Noising)
@@ -161,13 +155,12 @@ $$
 ├── 0_mnist_dataset_download.py    # 📥 Script to download MNIST data
 ├── 1_forward_process.ipynb        # 📊 Notebook to visualize the forward (noising) process
 ├── 2_reverse_process.ipynb        # 📝 Scratchpad notebook for reverse process concepts
-├── 4_mnist_diffusion.py           # 🚀 The main training script
-│
+├── 3_mnist_diffusion.py           # 🚀 The main training script for MNIST dataset
+├── 4_sampling_process.ipynb       # 🖼️ Sampling/Inference new images based on trained models
 ├── utils/                         # 🛠️ Utility directory
 │   ├── models.py                  # 🤖 Model architectures (UNet, etc.)
 │   ├── scheduler.py               # 🌊 Noise schedulers
 │   └── tools.py                   # ⚙️ Helper functions (normalize, denormalize)
-│
 └── data/                          # 📁 Directory for datasets and saved model weights
 ```
 
