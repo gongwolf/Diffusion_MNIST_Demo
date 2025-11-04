@@ -199,6 +199,13 @@ You've implemented three different models to predict the added noise `e`.
       * **Positional Encoding**: Uses sinusoidal time embeddings (like in Transformers) for a richer representation of the timestep `t`.
       * **Group Normalization**: Uses `GroupNorm` instead of `BatchNorm`, which works better with small batch sizes.
 
+
+## Acknowledgements
+
+This project was built for educational purposes and was heavily inspired by the clear and concise `diffusion-from-scratch` repository by LambdaLabsML.
+
+* **[LambdaLabsML/diffusion-from-scratch](https://github.com/LambdaLabsML/diffusion-from-scratch)**: Thank you for providing such an excellent, minimal implementation to learn from.
+
 ## References
 
 1.  \<a id="ho2020denoisingdiffusionprobabilisticmodels"\>\</a\> Ho, J., Jain, A., & Abbeel, P. (2020). *Denoising Diffusion Probabilistic Models*. [arXiv:2006.11239](https://arxiv.org/abs/2006.11239).
