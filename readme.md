@@ -200,5 +200,4 @@ This project was built for educational purposes and was heavily inspired by the 
 * **[LambdaLabsML/diffusion-from-scratch](https://github.com/LambdaLabsML/diffusion-from-scratch)**: Thank you for providing such an excellent, minimal implementation to learn from.
 
 ## References
-
-1.  \<a id="ho2020denoisingdiffusionprobabilisticmodels"\>\</a\> Ho, J., Jain, A., & Abbeel, P. (2020). *Denoising Diffusion Probabilistic Models*. [arXiv:2006.11239](https://arxiv.org/abs/2006.11239).
+1.  <a id="ho2020denoisingdiffusionprobabilisticmodels"\>\</a\> Ho, J., Jain, A., & Abbeel, P. (2020). *Denoising Diffusion Probabilistic Models*. [arXiv:2006.11239](https://arxiv.org/abs/2006.11239).
